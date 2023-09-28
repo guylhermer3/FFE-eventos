@@ -1,0 +1,19 @@
+.card {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid blueviolet;
+    font-size: 12px;
+    color: #323232;
+}
+
+.card:hover {
+    cursor: pointer;
+    background-color: rgb(247, 236, 166);
+}
+
+.cardTitulo {
+    color: blueviolet;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
