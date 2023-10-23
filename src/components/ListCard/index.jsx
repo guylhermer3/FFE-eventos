@@ -4,7 +4,7 @@ import Card from "../Card"
 import styles from "./styles.module.css"
 
 export default function ListCard() {
-  
+
   const [eventos, setEventos] = useState([])
 
   useEffect(() => {
@@ -21,13 +21,14 @@ export default function ListCard() {
   return (
     <>
       <div className={styles.listCard}>
-      {eventos.map(e => (
-        <Card
-          titulo={e.titulo}
-          dataInicio={formatarData(e.dataInicio)}
-          dataFim={formatarData(e.dataFim)} />
-       ))
-      }
+        {eventos.map(e => (
+          <Card
+            id={e.id}
+            titulo={e.titulo}
+            dataInicio={formatarData(e.dataInicio)}
+            dataFim={formatarData(e.dataFim)} />
+        ))
+        }
       </div>
     </>
   )
